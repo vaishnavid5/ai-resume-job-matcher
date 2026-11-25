@@ -1,0 +1,126 @@
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  font-family: Arial, sans-serif;
+  color: #171717;
+  background: #ffffff;
+}
+
+body {
+  margin: 0;
+  background: #f7f7f7;
+  color: #171717;
+}
+
+.container {
+  max-width: 850px;
+  margin: auto;
+  padding: 24px;
+}
+
+.header {
+  text-align: center;
+  padding: 24px 0;
+}
+
+.brand {
+  font-size: 30px;
+  font-weight: bold;
+  color: #d71920;
+}
+
+.card {
+  background: #ffffff;
+  padding: 24px;
+  margin: 20px 0;
+  border: 1px solid #e5e5e5;
+  border-radius: 14px;
+  box-shadow: 0 4px 16px #0000000a;
+}
+
+label {
+  display: block;
+  margin-top: 16px;
+  margin-bottom: 7px;
+  font-weight: bold;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #cccccc;
+  border-radius: 8px;
+  font-size: 15px;
+  background: #ffffff;
+  color: #171717;
+}
+
+input:focus,
+textarea:focus {
+  outline: 2px solid #d71920;
+  border-color: #d71920;
+}
+
+button {
+  margin-top: 18px;
+  padding: 12px 18px;
+  background: #d71920;
+  color: #ffffff;
+  border: 1px solid #d71920;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+button:hover {
+  background: #a90f16;
+}
+
+button:disabled {
+  opacity: 0.6;
+  cursor: wait;
+}
+
+.job {
+  border: 1px solid #e0e0e0;
+  border-left: 4px solid #d71920;
+  border-radius: 10px;
+  padding: 16px;
+  margin-top: 16px;
+  background: #ffffff;
+}
+
+.job h3 {
+  color: #171717;
+}
+
+.error {
+  color: #c62828;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  color: #666666;
+}
+
+@media print {
+  body {
+    background: white;
+  }
+
+  .header,
+  .card:not(.resume),
+  footer {
+    display: none;
+  }
+
+  .resume {
+    box-shadow: none;
+    border: none;
+  }
+}
